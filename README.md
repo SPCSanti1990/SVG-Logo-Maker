@@ -29,12 +29,22 @@ WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ```
 
-## Screenshot:
-[screenshot](./public/img/Screenshot%202024-02-04%20112149.png) change to actual screenshot
+## Screenshots:
+Command line application screenshot
+[Command line application screenshot](./img/Screenshot%202024-02-18%20153245.png)
+
+Jest Testing screenshot
+[Jest Testing screenshot](./img/Screenshot%202024-02-18%20153355.png)
+
+Generated logo screenshot
+[Generated logo screenshot](./img/Screenshot%202024-02-18%20153321.png)
 
 ## What I Learned:
-1. 
-2. 
+1. How to use the command line to ask questions and retrieve data from the user to generate a SVG file
+2. How to use Jest to create test criteria to test code functions correctly
 
 ## Repository Link:
 [Repository Link 'Click Here'.](https://github.com/SPCSanti1990/SVG-Logo-Maker)
+
+## Walkthrough Video:
+[Walkthrough Video 'Click Here'.](https://drive.google.com/file/d/1D4gZxqNGp1YxaEfCt2xsJSZIogM-JoE0/view)
