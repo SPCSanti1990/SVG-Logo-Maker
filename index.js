@@ -15,8 +15,8 @@ class SVG {
     setTextElement(text,color) {
         this.textElement = `<text x="150" y="125" font-size="60" text-anchor="middle" fill="${color}">${text}</text>`
     }
-    setShapeElement(shapeColor) {
-        this.shapeElement = shapeColor.render()
+    setShapeElement(shape) {
+        this.shapeElement = shape.render()
     }
 }
 
@@ -46,7 +46,7 @@ const questions = [
 ]
 
 // Add a function to write data to a file
-function writeFile(fileName, data) {
+function writeToFile(fileName, data) {
     console.log("Writing [" + data + "] to file [" + fileName+ "]")
     filesystem.writeFile(fileName, data, function (err) {
         if (err) {
@@ -120,7 +120,7 @@ async function init() {
 
 	console.log("Logo generation complete!");
 	console.log("Writing logo to file...");
-	writeFile(svg_file, svgString); 
+	writeToFile(svg_file, svgString); 
 }
 
 init()
