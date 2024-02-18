@@ -15,8 +15,8 @@ class SVG {
     setTextElement(text,color) {
         this.textElement = `<text x="150" y="125" font-size="60" text-anchor="middle" fill="${color}">${text}</text>`
     }
-    setShapeElement(shape) {
-        this.shapeElement = shape.render()
+    setShapeElement(shapeColor) {
+        this.shapeElement = shapeColor.render()
     }
 }
 
@@ -35,7 +35,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "shape-color",
+        name: "shapeColor",
         message: "SHAPE COLOR: Enter a color keyword"
     },
     {
@@ -82,7 +82,7 @@ async function init() {
 	console.log("User font color: [" + user_font_color + "]");
 
 	//user shape color
-	user_shape_color = answers["shape-color"];
+	user_shape_color = answers["shapeColor"];
 	console.log("User shape color: [" + user_shape_color + "]");
 
 	//user shape type
